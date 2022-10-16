@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.time.Duration;
+
 public class Driver { private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     public static void setDriver() {
@@ -13,7 +15,7 @@ public class Driver { private static ThreadLocal<WebDriver> driver = new ThreadL
 //        driver = new ChromeDriver(setUpOptions());
         driver.set(new ChromeDriver(setUpOptions()));
         driver.get().manage().deleteAllCookies();
-//        driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     public static WebDriver getDriver() {
