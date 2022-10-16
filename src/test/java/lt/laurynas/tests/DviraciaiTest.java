@@ -1,7 +1,6 @@
 package lt.laurynas.tests;
 
 import lt.laurynas.pages.DviraciaiPage;
-import lt.laurynas.pages.Locators;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -29,7 +28,7 @@ public class DviraciaiTest extends TestBase {
         DviraciaiPage.clickPirkti();
         actualText = DviraciaiPage.checkText();
 
-        Assert.assertEquals(actualText,expectedText);
+        Assert.assertEquals(actualText, expectedText);
 
 
     }

@@ -31,7 +31,6 @@ public class Locators {
             public static By clickAtsiimkiteSiandien = By.xpath("//label[@for='item445514263500']");
 
 
-
             public static By clickRekomenduojamasUgis = By.xpath("//label[@for='item72816089758']");
 
             public static By clickIKrepseli = By.xpath("//*[@id='productBlock42447503']/div/div/a[2]");

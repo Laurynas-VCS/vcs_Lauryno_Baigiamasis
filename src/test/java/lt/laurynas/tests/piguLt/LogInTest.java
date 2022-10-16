@@ -61,12 +61,15 @@ public class LogInTest extends TestBase {
         LogInPage.inputEmailAddress(actualEmailAddress);
         LogInPage.inputPassword(actualPassword);
         LogInPage.clickPrisijungti();
+        LogInPage.sleep(5000);
         LogInPage.clickProfileIcon();
+        LogInPage.sleep(5000);
         LogInPage.clickAtsijungti();
+        LogInPage.sleep(5000);
 
-       // actualText = LogInPage.checkText();
+        actualText = LogInPage.checkText();
 
-     //  Assert.assertEquals(actualText, expectedText);
+         Assert.assertEquals(actualText, expectedText);
 
     }
 }
