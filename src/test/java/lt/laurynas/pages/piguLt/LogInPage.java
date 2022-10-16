@@ -30,6 +30,7 @@ public class LogInPage {
     }
 
     public static void clickPrisijungti() {
+        Common.waitForElementToBeClickable(Locators.Pigu.LogIn.clickPrisijungti);
         Common.clickElement(Locators.Pigu.LogIn.clickPrisijungti);
     }
 
@@ -54,6 +55,7 @@ public class LogInPage {
     }
 
     public static void clickAtsijungti() {
+     //   Common.waitForElementToBeClickable(Locators.Pigu.LogIn.clickAtsijungti);
         Common.clickElementByAction(Locators.Pigu.LogIn.clickAtsijungti);
     }
     public static String checkText(){

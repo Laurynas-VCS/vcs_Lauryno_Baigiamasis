@@ -1,4 +1,7 @@
-package lt.laurynas.pages;
+package lt.laurynas.pages.piguLt;
+
+import lt.laurynas.pages.Common;
+import lt.laurynas.pages.Locators;
 
 public class DviraciaiPage {
     public static void open(String url) {

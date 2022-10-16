@@ -1,6 +1,7 @@
-package lt.laurynas.tests;
+package lt.laurynas.tests.piguLt;
 
-import lt.laurynas.pages.DviraciaiPage;
+import lt.laurynas.pages.piguLt.DviraciaiPage;
+import lt.laurynas.tests.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

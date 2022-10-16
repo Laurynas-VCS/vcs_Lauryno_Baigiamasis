@@ -45,5 +45,27 @@ public class Locators {
             public static By getElementText = By.xpath("//strong[@class='float_left']");
 
         }
+
+        public static class Vaikams_Kudikiams {
+
+            public static By clickLaukoZaislai = By.xpath("//*[@id='categoriesGrid']/div[1]/a/p");
+
+            public static By clickPaspirtukai = By.xpath("//*[@id='categoriesGrid']/div[1]/a/p");
+
+            public static By clickOnWantedProduct = By.xpath
+                    ("//*[@id=\"productBlock52175083\"]/div/div/a[2]");
+
+            public static By clickPirkti = By.xpath("//a[@id='buy']");
+
+            public static By clickRinktisDaugiauPrekiu =
+                    By.xpath("//a[@class='btn btn-secondary has-icon-left']");
+
+            public static By clickVisosPrekes = By.xpath("//*[@id='menuBurger']/span");
+
+            public static By clickVaikamsIrKudikiams = By.xpath("//h2[@class='style-yellow']");
+
+            public static By getText =
+                    By.xpath("//strong[@class='notranslate float_right fs-18']");
+        }
     }
 }

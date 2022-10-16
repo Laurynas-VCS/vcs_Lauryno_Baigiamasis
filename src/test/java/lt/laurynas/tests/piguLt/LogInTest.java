@@ -65,7 +65,7 @@ public class LogInTest extends TestBase {
         LogInPage.clickProfileIcon();
         LogInPage.sleep(5000);
         LogInPage.clickAtsijungti();
-        LogInPage.sleep(5000);
+
 
         actualText = LogInPage.checkText();
 
