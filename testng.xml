@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing Pigu Lt" parallel="methods" thread-count="4">
+    <test name="Pigu Lt">
+        <classes>
+            <class name="lt.laurynas.tests.piguLt.LogInTest"/>
+            <class name="lt.laurynas.tests.piguLt.DviraciaiTest"/>
+            <class name="lt.laurynas.tests.piguLt.Vaikams_KudikiamsTest"/>
+        </classes>
+    </test>
+</suite>
