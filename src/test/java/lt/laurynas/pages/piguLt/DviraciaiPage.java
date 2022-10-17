@@ -12,14 +12,6 @@ public class DviraciaiPage {
         Common.clickElement(Locators.Pigu.Dviraciai.clickAtsiimkiteSiandien);
     }
 
-    public static void sleep(int millis) {
-        try {
-            Thread.sleep(millis);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
 
     public static void clickRekomenduojamasUgis() {
         Common.clickElement(Locators.Pigu.Dviraciai.clickRekomenduojamasUgis);

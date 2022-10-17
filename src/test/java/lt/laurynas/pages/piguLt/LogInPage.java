@@ -34,13 +34,6 @@ public class LogInPage {
         Common.clickElement(Locators.Pigu.LogIn.clickPrisijungti);
     }
 
-    public static void sleep(int millis) {
-        try {
-            Thread.sleep(millis);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
 
     public static String readMessage() {
         return Common.getElementText(Locators.Pigu.LogIn.readMessageText);
@@ -59,10 +52,10 @@ public class LogInPage {
 
         Common.clickElement(Locators.Pigu.LogIn.clickAtsijungti);
     }
-    public static String checkText(){
+
+    public static String checkText() {
         return Common.getElementText(Locators.Pigu.LogIn.checkText);
     }
-
 
 
 }

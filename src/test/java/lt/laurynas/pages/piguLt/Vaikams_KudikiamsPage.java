@@ -44,7 +44,6 @@ public class Vaikams_KudikiamsPage {
     }
 
 
-
     public static void clickMaitinimoPriemones() {
         Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickMaitinimoPriemones);
     }
@@ -52,12 +51,16 @@ public class Vaikams_KudikiamsPage {
     public static void clickMaitinimoKedutes() {
         Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickMaitinimoKedutes);
     }
+
     public static void clickIKrepseli2() {
         Common.clickElementByAction(Locators.Pigu.Vaikams_Kudikiams.clickIKrepseli2);
     }
+
     public static String getTextA() {
         return Common.getElementText(Locators.Pigu.Vaikams_Kudikiams.getTextA);
     }
-    public static String getTextB() { return Common.getElementText(Locators.Pigu.Vaikams_Kudikiams.getTextB);
+
+    public static String getTextB() {
+        return Common.getElementText(Locators.Pigu.Vaikams_Kudikiams.getTextB);
     }
 }
