@@ -25,14 +25,10 @@ public class DviraciaiPage {
         Common.clickElement(Locators.Pigu.Dviraciai.clickRekomenduojamasUgis);
     }
 
-    public static void clickToOpenProductPage(){
-        // Common.waitForElementToBeClickable(Locators.Pigu.Dviraciai.clickOpenProductPage);// su wait neranda
-        Common.clickElement(Locators.Pigu.Dviraciai.clickOpenProductPage);
-    }
-
-
     public static void clickIKrepseli() {
-        Common.clickElement(Locators.Pigu.Dviraciai.clickIKrepseli);
+
+
+        Common.clickElementByAction(Locators.Pigu.Dviraciai.clickIKrepseli);
     }
 
     public static void clickPirkti() {

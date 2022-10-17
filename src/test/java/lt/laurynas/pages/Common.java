@@ -100,6 +100,14 @@ public class Common {
         action.perform();
     }
 
+    public static void moveToElement(By locator){
+        WebElement element = getElement(locator);
+
+        Actions action = new Actions(Driver.getDriver());
+        action.moveToElement(element);
+        action.perform();
+    }
+
     public static void doubleClickByActions(By locator) {
         WebElement element = getElement(locator);
 
@@ -131,5 +139,7 @@ public class Common {
     public static void waitForElementWithVisibilityChange(By locator) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(8));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
+
     }
 }

@@ -18,18 +18,20 @@ public class DviraciaiTest extends TestBase {
     @Test
     private void puttingChoosenMerchandiseToBuyingCart() {
 
-        String expectedText = "Užsakymo suma";
+        String expectedText = "Dino Bikes";
         String actualText = "";
 
         DviraciaiPage.clickAtsiimkiteSiandien();
         DviraciaiPage.clickRekomenduojamasUgis();
-        DviraciaiPage.sleep(5000);
-        DviraciaiPage.clickToOpenProductPage();
         DviraciaiPage.clickIKrepseli();
         DviraciaiPage.clickPirkti();
         actualText = DviraciaiPage.checkText();
 
-        Assert.assertEquals(actualText, expectedText);
+        Assert.assertTrue(actualText.contains(expectedText),
+                String.format("Actual [%s]; Expected [%s]",
+                        actualText,
+                        expectedText)
+        );
 
 
     }
