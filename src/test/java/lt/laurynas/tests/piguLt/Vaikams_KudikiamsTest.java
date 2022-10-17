@@ -18,22 +18,36 @@ public class Vaikams_KudikiamsTest extends TestBase {
     @Test
     private void putTwoProductsInKrepselis() {
 
-        String expectedKiekis = "14598 €";
-        String actualKiekis = "";
+        String expectedTextA = "Lionelo Whizz";
+        String actualTextA = "";
+        String expectedTextB = "Kinderkraft";
+        String actualTextB = "";
 
         Vaikams_KudikiamsPage.clickLaukoZaislai();
         Vaikams_KudikiamsPage.clickPaspirtukai();
-        Vaikams_KudikiamsPage.selectProduct();
+        Vaikams_KudikiamsPage.clickIKrepseli();
         Vaikams_KudikiamsPage.clickPirkti();
         Vaikams_KudikiamsPage.clickRinktisDaugiauPrekiu();
         Vaikams_KudikiamsPage.clickVisosPrekes();
         Vaikams_KudikiamsPage.clickVaikamsIrKudikiams();
-        Vaikams_KudikiamsPage.clickLaukoZaislai();
-        Vaikams_KudikiamsPage.clickPaspirtukai();
-        Vaikams_KudikiamsPage.selectProduct();
+        Vaikams_KudikiamsPage.clickKudikiuPrekes();
+        Vaikams_KudikiamsPage.clickMaitinimoPriemones();
+        Vaikams_KudikiamsPage.clickMaitinimoKedutes();
+        Vaikams_KudikiamsPage.clickIKrepseli2();
         Vaikams_KudikiamsPage.clickPirkti();
-        actualKiekis = Vaikams_KudikiamsPage.readMessage();
+        actualTextA = Vaikams_KudikiamsPage.getTextA();
+        actualTextB = Vaikams_KudikiamsPage.getTextB();
 
-        Assert.assertEquals(actualKiekis, expectedKiekis);
+        Assert.assertTrue(actualTextA.contains(expectedTextA),
+                String.format("Actual [%s]; Expected [%s]",
+                actualTextA,
+                expectedTextA)
+        );
+
+        Assert.assertTrue(actualTextB.contains(expectedTextB),
+                String.format("Actual [%s]; Expected [%s]",
+                        actualTextB,
+                        expectedTextB)
+        );
     }
 }
