@@ -50,15 +50,19 @@ public class LogInPage {
         return Common.getElementText(Locators.Pigu.LogIn.checkElementText);
     }
 
-    public static void clickProfileIcon() {
-        Common.clickElementByAction(Locators.Pigu.LogIn.clickProfileItem);
+    public static void moveToProfileIcon() {
+
+        Common.moveToElement(Locators.Pigu.LogIn.clickProfileIcon);
     }
 
     public static void clickAtsijungti() {
-     //   Common.waitForElementToBeClickable(Locators.Pigu.LogIn.clickAtsijungti);
-        Common.clickElementByAction(Locators.Pigu.LogIn.clickAtsijungti);
+
+        Common.clickElement(Locators.Pigu.LogIn.clickAtsijungti);
     }
     public static String checkText(){
         return Common.getElementText(Locators.Pigu.LogIn.checkText);
     }
+
+
+
 }

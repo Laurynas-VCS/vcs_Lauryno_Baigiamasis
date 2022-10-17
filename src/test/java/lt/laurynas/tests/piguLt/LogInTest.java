@@ -51,8 +51,9 @@ public class LogInTest extends TestBase {
         Assert.assertEquals(actualMessage, expectedMessage);
 
     }
+
     @Test
-    private void logout(){
+    private void logout() {
         String actualEmailAddress = "lkacenas@gmail.com";
         String actualPassword = "Lietuva21";
         String expectedText = "Prisijungti";
@@ -61,15 +62,12 @@ public class LogInTest extends TestBase {
         LogInPage.inputEmailAddress(actualEmailAddress);
         LogInPage.inputPassword(actualPassword);
         LogInPage.clickPrisijungti();
-        LogInPage.sleep(5000);
-        LogInPage.clickProfileIcon();
-        LogInPage.sleep(5000);
+        LogInPage.moveToProfileIcon();
         LogInPage.clickAtsijungti();
-
 
         actualText = LogInPage.checkText();
 
-         Assert.assertEquals(actualText, expectedText);
+        Assert.assertEquals(actualText, expectedText);
 
     }
 }
