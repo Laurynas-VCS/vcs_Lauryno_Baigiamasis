@@ -19,9 +19,9 @@ public class LogInTest extends TestBase {
     @Test
     private void logInWithValidInput() {
 
-        String actualEmailAddress = "lkacenas@gmail.com";
-        String actualPassword = "Lietuva21";
-        String expectedText = "Laurynas Kačėnas";
+        String actualEmailAddress = "xiyace5563@lance7.com";
+        String actualPassword = "VCS123";
+        String expectedText = "xiyace5563@lance7.com";
         String actualText = "";
 
         LogInPage.inputEmailAddress(actualEmailAddress);
@@ -39,7 +39,7 @@ public class LogInTest extends TestBase {
     private void logInWithInvalidInput() {
 
         String actualEmailAddress = "vardenis@gmail.com";
-        String actualPassword = "Lietuva21";
+        String actualPassword = "VCS123";
         String expectedMessage = "Neteisingi prisijungimo duomenys";
         String actualMessage = "";
 
@@ -54,8 +54,8 @@ public class LogInTest extends TestBase {
 
     @Test
     private void logout() {
-        String actualEmailAddress = "lkacenas@gmail.com";
-        String actualPassword = "Lietuva21";
+        String actualEmailAddress = "xiyace5563@lance7.com";
+        String actualPassword = "VCS123";
         String expectedText = "Prisijungti";
         String actualText = "";
 
