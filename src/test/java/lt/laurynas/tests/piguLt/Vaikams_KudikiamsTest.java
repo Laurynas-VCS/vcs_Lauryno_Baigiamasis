@@ -18,7 +18,7 @@ public class Vaikams_KudikiamsTest extends TestBase {
     @Test
     private void putTwoProductsInKrepselis() {
 
-        String expectedTextA = "Lionelo Whizz";
+        String expectedTextA = "Triratis";
         String actualTextA = "";
         String expectedTextB = "Kinderkraft";
         String actualTextB = "";

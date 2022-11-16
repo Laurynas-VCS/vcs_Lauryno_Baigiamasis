@@ -9,8 +9,8 @@ public class Vaikams_KudikiamsPage {
     }
 
     public static void clickLaukoZaislai() {
-        Common.waitForElementToBeClickable(Locators.Pigu.Vaikams_Kudikiams.clickLaukoZaislai);
-        Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickLaukoZaislai);
+        Common.waitForElementToBeClickable(Locators.Pigu.Vaikams_Kudikiams.clickButtonLaukoZaislai);
+        Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickButtonLaukoZaislai);
     }
 
     public static void clickKudikiuPrekes() {

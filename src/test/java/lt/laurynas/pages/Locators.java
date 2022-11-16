@@ -45,19 +45,20 @@ public class Locators {
 
         public static class Vaikams_Kudikiams {
 
-            public static By clickLaukoZaislai = By.xpath("//*[@id='categoriesGrid']/div[1]/a/p");
+            public static By clickButtonLaukoZaislai = By.xpath("(//p[@class='name'])[5]");
 
-            public static By clickKudikiuPrekes = By.xpath("//*[@id='categoriesGrid']/div[2]/a/p");
+            public static By clickKudikiuPrekes = By.xpath("(//p[@class='name'])[4]");
 
-            public static By clickPaspirtukai = By.xpath("//*[@id='categoriesGrid']/div[1]/a/p");
+            public static By clickPaspirtukai = By.xpath("(//p[@class='name'])[2]");
 
             public static By clickMaitinimoPriemones = By.xpath("//*[@id='categoriesGrid']/div[2]/a/p");
 
             public static By clickMaitinimoKedutes = By.xpath("//*[@id='categoriesGrid']/div[1]/a/p");
             public static By clickOnWantedProduct = By.xpath
-                    ("//*[@id='productBlock52175083']/div/div/a[2]");
+                    ("(//a[@class='btn-primary btn-full-width btn'])[1]");
 
-            public static By clickIKrepseli2 = By.xpath("//*[@id='productBlock57625764']/div/div/a[2]");
+            public static By clickIKrepseli2 =
+                    By.xpath("(//a[@class='btn-primary btn-full-width btn'])[1]");
 
             public static By clickPirkti = By.xpath("//a[@id='buy']");
 
@@ -66,7 +67,8 @@ public class Locators {
 
             public static By clickVisosPrekes = By.xpath("//*[@id='menuBurger']/span");
 
-            public static By clickVaikamsIrKudikiams = By.xpath("//h2[@class='style-yellow']");
+            public static By clickVaikamsIrKudikiams =
+                    By.xpath("(//h2[@class='h-h2--small h-fw--semibold h-mt--0'])[1]");
 
             public static By getTextA =
                     By.xpath("(//div[@class='product-name']//a[@target='_blank'])[1]");
