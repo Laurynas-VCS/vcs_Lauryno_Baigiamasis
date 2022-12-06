@@ -18,9 +18,9 @@ public class Vaikams_KudikiamsTest extends TestBase {
     @Test
     private void putTwoProductsInKrepselis() {
 
-        String expectedTextA = "Triratis";
+        String expectedTextA = "Bebe";
         String actualTextA = "";
-        String expectedTextB = "Kinderkraft";
+        String expectedTextB = "Dolu";
         String actualTextB = "";
 
         Vaikams_KudikiamsPage.clickLaukoZaislai();

@@ -13,7 +13,7 @@ public class Locators {
             public static By inputPassword =
                     By.xpath("//div[@class='form-row has-icon ']//input[@type='password']");
 
-            public static By clickPrisijungti = By.xpath("//input[@value='Prisijungti']");
+            public static By clickPrisijungtiButton = By.xpath("//input[@value='Prisijungti']");
 
             public static By readMessageText = By.xpath("//div[@class='error-message']");
 
@@ -21,7 +21,7 @@ public class Locators {
 
             public static By clickProfileIcon = By.xpath("//li[@class='c-user-menu-item'][1]");
 
-            public static By clickAtsijungti = By.xpath("//i[@class='c-icon--exit']");
+            public static By clickAtsijungtiButton = By.xpath("//i[@class='c-icon--exit']");
 
             public static By checkText = By.xpath("//*[@id='loginModal']/div[1]/div[1]/form/h1");
         }
@@ -34,7 +34,7 @@ public class Locators {
             public static By clickRekomenduojamasUgis = By.xpath("//label[@for='item72816089948']");
 
             public static By clickIKrepseli =
-                    By.xpath("//*//*[@id='productBlock11379016']/div/div/a[2]");
+                    By.xpath("(//a[@class='btn-primary btn-full-width btn'])[2]");
 
 
             public static By clickPirkti = By.xpath("//a[@id='buy']");
@@ -45,15 +45,17 @@ public class Locators {
 
         public static class Vaikams_Kudikiams {
 
-            public static By clickButtonLaukoZaislai = By.xpath("(//p[@class='name'])[5]");
+            public static By clickButtonLaukoZaislai =
+                    By.xpath("//p[contains(text(),'Lauko žaislai')]");
 
             public static By clickKudikiuPrekes = By.xpath("(//p[@class='name'])[4]");
 
-            public static By clickPaspirtukai = By.xpath("(//p[@class='name'])[2]");
+            public static By clickPaspirtukai = By.xpath("//p[contains(text(),'Paspirtukai')]");
 
-            public static By clickMaitinimoPriemones = By.xpath("//*[@id='categoriesGrid']/div[2]/a/p");
+            public static By clickMaitinimoPriemones =
+                    By.xpath("//p[contains(text(),'Maitinimo priemonės')]");
 
-            public static By clickMaitinimoKedutes = By.xpath("//*[@id='categoriesGrid']/div[1]/a/p");
+            public static By clickMaitinimoKedutes = By.xpath("//p[contains(text(),'Maitinimo kėdutės')]");
             public static By clickOnWantedProduct = By.xpath
                     ("(//a[@class='btn-primary btn-full-width btn'])[1]");
 
@@ -68,7 +70,7 @@ public class Locators {
             public static By clickVisosPrekes = By.xpath("//*[@id='menuBurger']/span");
 
             public static By clickVaikamsIrKudikiams =
-                    By.xpath("(//h2[@class='h-h2--small h-fw--semibold h-mt--0'])[1]");
+                    By.xpath("//h2[contains(text(),'Vaikams ir kūdikiams')]");
 
             public static By getTextA =
                     By.xpath("(//div[@class='product-name']//a[@target='_blank'])[1]");
@@ -76,5 +78,6 @@ public class Locators {
             public static By getTextB =
                     By.xpath("(//div[@class='product-name']//a[@target='_blank'])[2]");
         }
+
     }
 }
