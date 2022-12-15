@@ -34,7 +34,7 @@ public class Locators {
             public static By clickRekomenduojamasUgis = By.xpath("//label[@for='item72816089948']");
 
             public static By clickIKrepseli =
-                    By.xpath("(//a[@class='btn-primary btn-full-width btn'])[2]");
+                    By.xpath("(//a[@class='btn-primary btn-full-width btn'])[1]");
 
 
             public static By clickPirkti = By.xpath("//a[@id='buy']");
@@ -48,7 +48,7 @@ public class Locators {
             public static By clickButtonLaukoZaislai =
                     By.xpath("//p[contains(text(),'Lauko žaislai')]");
 
-            public static By clickKudikiuPrekes = By.xpath("(//p[@class='name'])[4]");
+            public static By clickKudikiuPrekes = By.xpath("//p[contains(.,'Kūdikių prekės')]");
 
             public static By clickPaspirtukai = By.xpath("//p[contains(text(),'Paspirtukai')]");
 
