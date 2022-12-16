@@ -18,7 +18,7 @@ public class DviraciaiTest extends TestBase {
     @Test
     private void puttingChosenMerchandiseToBuyingCart() {
 
-        String expectedText = "Dino Bikes";
+        String expectedText = "1";
         String actualText = "";
 
         DviraciaiPage.clickAtsiimkiteSiandien();

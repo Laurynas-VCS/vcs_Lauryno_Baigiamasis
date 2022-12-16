@@ -57,10 +57,7 @@ public class Vaikams_KudikiamsPage {
     }
 
     public static String getTextA() {
-        return Common.getElementText(Locators.Pigu.Vaikams_Kudikiams.getTextA);
+        return Common.getElementText(Locators.Pigu.Vaikams_Kudikiams.getText);
     }
 
-    public static String getTextB() {
-        return Common.getElementText(Locators.Pigu.Vaikams_Kudikiams.getTextB);
-    }
 }

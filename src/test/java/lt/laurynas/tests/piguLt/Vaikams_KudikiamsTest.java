@@ -18,10 +18,9 @@ public class Vaikams_KudikiamsTest extends TestBase {
     @Test
     private void putTwoProductsInKrepselis() {
 
-        String expectedTextA = "Bebe";
+        String expectedText = "2";
         String actualTextA = "";
-        String expectedTextB = "Dolu";
-        String actualTextB = "";
+
 
         Vaikams_KudikiamsPage.clickLaukoZaislai();
         Vaikams_KudikiamsPage.clickPaspirtukai();
@@ -36,18 +35,13 @@ public class Vaikams_KudikiamsTest extends TestBase {
         Vaikams_KudikiamsPage.clickIKrepseli2();
         Vaikams_KudikiamsPage.clickPirkti();
         actualTextA = Vaikams_KudikiamsPage.getTextA();
-        actualTextB = Vaikams_KudikiamsPage.getTextB();
 
-        Assert.assertTrue(actualTextA.contains(expectedTextA),
+
+        Assert.assertTrue(actualTextA.contains(expectedText),
                 String.format("Actual [%s]; Expected [%s]",
-                actualTextA,
-                expectedTextA)
+                        actualTextA,
+                        expectedText)
         );
 
-        Assert.assertTrue(actualTextB.contains(expectedTextB),
-                String.format("Actual [%s]; Expected [%s]",
-                        actualTextB,
-                        expectedTextB)
-        );
     }
 }

@@ -18,9 +18,9 @@ public class DviraciaiPage {
     }
 
     public static void clickIKrepseli() {
-
-        Common.waitForElementToBeClickable(Locators.Pigu.Dviraciai.clickIKrepseli);
-        Common.clickElementByAction(Locators.Pigu.Dviraciai.clickIKrepseli);
+        Common.moveToElement(Locators.Pigu.Dviraciai.moveToElement);
+        Common.waitForElementToBeClickable(Locators.Pigu.Dviraciai.clickButtonIKrepseli);
+        Common.clickElementByAction(Locators.Pigu.Dviraciai.clickButtonIKrepseli);
     }
 
     public static void clickPirkti() {

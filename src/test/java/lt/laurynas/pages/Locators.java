@@ -33,13 +33,13 @@ public class Locators {
 
             public static By clickRekomenduojamasUgis = By.xpath("//label[@for='item72816089948']");
 
-            public static By clickIKrepseli =
+            public static By clickButtonIKrepseli =
                     By.xpath("(//a[@class='btn-primary btn-full-width btn'])[1]");
 
-
+            public static By moveToElement = By.id("productBlock8634462");
             public static By clickPirkti = By.xpath("//a[@id='buy']");
 
-            public static By getElementText = By.xpath("//div[@class='product-name']//a[@target='_blank']");
+            public static By getElementText = By.xpath("//span[@class='c-counter c-counter--primary']");
 
         }
 
@@ -72,11 +72,10 @@ public class Locators {
             public static By clickVaikamsIrKudikiams =
                     By.xpath("//h2[contains(text(),'Vaikams ir kūdikiams')]");
 
-            public static By getTextA =
-                    By.xpath("(//div[@class='product-name']//a[@target='_blank'])[1]");
+            public static By getText =
+                    By.xpath("//span[@class='c-counter c-counter--primary']");
 
-            public static By getTextB =
-                    By.xpath("(//div[@class='product-name']//a[@target='_blank'])[2]");
+
         }
 
     }
