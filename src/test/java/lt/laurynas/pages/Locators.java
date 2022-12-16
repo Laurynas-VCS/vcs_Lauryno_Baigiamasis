@@ -28,18 +28,20 @@ public class Locators {
 
         public static class Dviraciai {
 
-            public static By clickAtsiimkiteSiandien = By.xpath("//label[@for='item445514263500']");
+            public static By clickAtsiimkiteRytojCheckbox = By.xpath("//label[@for='item445514263500']");
 
 
-            public static By clickRekomenduojamasUgis = By.xpath("//label[@for='item72816089948']");
+            public static By clickRekomenduojamasUgisCheckbox =
+                    By.xpath("//label[@for='item72816089948']");
 
             public static By clickButtonIKrepseli =
                     By.xpath("(//a[@class='btn-primary btn-full-width btn'])[1]");
 
             public static By moveToElement = By.id("productBlock8634462");
-            public static By clickPirkti = By.xpath("//a[@id='buy']");
+            public static By clickPirktiButton = By.xpath("//a[@id='buy']");
 
-            public static By getElementText = By.xpath("//span[@class='c-counter c-counter--primary']");
+            public static By getElementTextFromCartIcon =
+                    By.xpath("//span[@class='c-counter c-counter--primary']");
 
         }
 
@@ -48,31 +50,31 @@ public class Locators {
             public static By clickButtonLaukoZaislai =
                     By.xpath("//p[contains(text(),'Lauko žaislai')]");
 
-            public static By clickKudikiuPrekes = By.xpath("//p[contains(.,'Kūdikių prekės')]");
+            public static By clickKudikiuPrekesImage = By.xpath("//p[contains(.,'Kūdikių prekės')]");
 
-            public static By clickPaspirtukai = By.xpath("//p[contains(text(),'Paspirtukai')]");
+            public static By clickPaspirtukaiImage = By.xpath("//p[contains(text(),'Paspirtukai')]");
 
-            public static By clickMaitinimoPriemones =
+            public static By clickMaitinimoPriemonesImage =
                     By.xpath("//p[contains(text(),'Maitinimo priemonės')]");
 
-            public static By clickMaitinimoKedutes = By.xpath("//p[contains(text(),'Maitinimo kėdutės')]");
-            public static By clickOnWantedProduct = By.xpath
+            public static By clickMaitinimoKedutesImage = By.xpath("//p[contains(text(),'Maitinimo kėdutės')]");
+            public static By clickOnWantedProductButton = By.xpath
                     ("(//a[@class='btn-primary btn-full-width btn'])[1]");
 
-            public static By clickIKrepseli2 =
+            public static By clickIKrepseli2Button =
                     By.xpath("(//a[@class='btn-primary btn-full-width btn'])[1]");
 
-            public static By clickPirkti = By.xpath("//a[@id='buy']");
+            public static By clickPirktiButton = By.xpath("//a[@id='buy']");
 
-            public static By clickRinktisDaugiauPrekiu =
+            public static By clickRinktisDaugiauPrekiuButton =
                     By.xpath("//a[@class='btn btn-secondary has-icon-left']");
 
-            public static By clickVisosPrekes = By.xpath("//*[@id='menuBurger']/span");
+            public static By clickVisosPrekesButton = By.xpath("//*[@id='menuBurger']/span");
 
-            public static By clickVaikamsIrKudikiams =
+            public static By clickVaikamsIrKudikiamsImage =
                     By.xpath("//h2[contains(text(),'Vaikams ir kūdikiams')]");
 
-            public static By getText =
+            public static By getTextFromCartIcon =
                     By.xpath("//span[@class='c-counter c-counter--primary']");
 
 

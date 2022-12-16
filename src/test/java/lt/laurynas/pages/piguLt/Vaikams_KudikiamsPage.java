@@ -14,50 +14,50 @@ public class Vaikams_KudikiamsPage {
     }
 
     public static void clickKudikiuPrekes() {
-        Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickKudikiuPrekes);
+        Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickKudikiuPrekesImage);
     }
 
     public static void clickPaspirtukai() {
-        Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickPaspirtukai);
+        Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickPaspirtukaiImage);
     }
 
     public static void clickIKrepseli() {
 
-        Common.clickElementByAction(Locators.Pigu.Vaikams_Kudikiams.clickOnWantedProduct);
+        Common.clickElementByAction(Locators.Pigu.Vaikams_Kudikiams.clickOnWantedProductButton);
     }
 
     public static void clickPirkti() {
 
-        Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickPirkti);
+        Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickPirktiButton);
     }
 
     public static void clickRinktisDaugiauPrekiu() {
-        Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickRinktisDaugiauPrekiu);
+        Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickRinktisDaugiauPrekiuButton);
     }
 
     public static void clickVisosPrekes() {
-        Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickVisosPrekes);
+        Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickVisosPrekesButton);
     }
 
     public static void clickVaikamsIrKudikiams() {
-        Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickVaikamsIrKudikiams);
+        Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickVaikamsIrKudikiamsImage);
     }
 
 
     public static void clickMaitinimoPriemones() {
-        Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickMaitinimoPriemones);
+        Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickMaitinimoPriemonesImage);
     }
 
     public static void clickMaitinimoKedutes() {
-        Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickMaitinimoKedutes);
+        Common.clickElement(Locators.Pigu.Vaikams_Kudikiams.clickMaitinimoKedutesImage);
     }
 
     public static void clickIKrepseli2() {
-        Common.clickElementByAction(Locators.Pigu.Vaikams_Kudikiams.clickIKrepseli2);
+        Common.clickElementByAction(Locators.Pigu.Vaikams_Kudikiams.clickIKrepseli2Button);
     }
 
     public static String getTextA() {
-        return Common.getElementText(Locators.Pigu.Vaikams_Kudikiams.getText);
+        return Common.getElementText(Locators.Pigu.Vaikams_Kudikiams.getTextFromCartIcon);
     }
 
 }

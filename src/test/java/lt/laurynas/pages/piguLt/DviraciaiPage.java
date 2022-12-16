@@ -9,12 +9,12 @@ public class DviraciaiPage {
     }
 
     public static void clickAtsiimkiteSiandien() {
-        Common.clickElement(Locators.Pigu.Dviraciai.clickAtsiimkiteSiandien);
+        Common.clickElement(Locators.Pigu.Dviraciai.clickAtsiimkiteRytojCheckbox);
     }
 
 
     public static void clickRekomenduojamasUgis() {
-        Common.clickElement(Locators.Pigu.Dviraciai.clickRekomenduojamasUgis);
+        Common.clickElement(Locators.Pigu.Dviraciai.clickRekomenduojamasUgisCheckbox);
     }
 
     public static void clickIKrepseli() {
@@ -24,10 +24,10 @@ public class DviraciaiPage {
     }
 
     public static void clickPirkti() {
-        Common.clickElement(Locators.Pigu.Dviraciai.clickPirkti);
+        Common.clickElement(Locators.Pigu.Dviraciai.clickPirktiButton);
     }
 
     public static String checkText() {
-        return Common.getElementText(Locators.Pigu.Dviraciai.getElementText);
+        return Common.getElementText(Locators.Pigu.Dviraciai.getElementTextFromCartIcon);
     }
 }
